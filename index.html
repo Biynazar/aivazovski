@@ -16,24 +16,61 @@
             <nav class="nav" aria-label="header navigation">
                 <ul class="nav-list" aria-label="header navigation list">
                     <li>
-                        <a class="nav-link" href="#home-id" aria-label="header link to home">Home</a>
+                        <a class="mobile-navigation-link" href="#home-id" aria-label="header link to home">Home</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#about-id" aria-label="header link to about">About</a>
+                        <a class="mobile-navigation-link" href="#about-id" aria-label="header link to about">About</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#history-id" aria-label="header link to history">History</a>
+                        <a class="mobile-navigation-link" href="#history-id" aria-label="header link to history">History</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#portfolio-id" aria-label="header link to portfolio">Portfolio</a>
+                        <a class="mobile-navigation-link" href="#portfolio-id" aria-label="header link to portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#contacts-id" aria-label="header link to contacts">Contacts</a>
+                        <a class="mobile-navigation-link" href="#contacts-id" aria-label="header link to contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <div class="mobile-navigation" aria-label="mobile navigation">
+        <label for="toggler-id" aria-label="open-close mobile-navigation menu">
+            <svg class="mobile-navigation-burger" aria-label="burger icon">
+                <use href="./src/assets/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" id="toggler-id" class="mobile-navigation-toggler">
+
+        <nav class="mobile-navigation-menu" aria-label="mob  header navigation">
+            <ul class="mobile-navigation-list" aria-label="mob header navigation list">
+                <li>
+                    <a class="mobile-navigation-link" href="#home-id" aria-label="header link to home">Home</a>
+                </li>
+                <li>
+                    <a class="mobile-navigation-link" href="#about-id" aria-label="header link to about">About</a>
+                </li>
+                <li>
+                    <a class="mobile-navigation-link" href="#history-id" aria-label="header link to history">History</a>
+                </li>
+                <li>
+                    <a class="mobile-navigation-link" href="#portfolio-id" aria-label="header link to portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a class="mobile-navigation-link" href="#contacts-id" aria-label="header link to contacts">Contacts</a>
+                </li>
+            </ul>
+
+            <label for="toggler-id" class="mobile-navigation-close" aria-label="open-close mobile-navigation menu">
+                <svg class="mobile-navigation-cross" aria-label="cross icon">
+                    <use href="./src/assets/sprites.svg#cross-icon"></use>
+                </svg>
+            </label>
+       </nav>
+
+    </div>
 
     <main aria-label="main content">
         <section class="home" aria-label="home section" id="home-id">
@@ -82,9 +119,12 @@
     <footer class="contacts" aria-label="contacts" id="contacts-id">
         <div class="container">
             <h2 class="contacts-title" aria-label="contacts title">Contacts</h2>
-            <button class="contacts-button" aria-label="contacts us">
-                <a class="button-link" href="http://aivazovski.ru" target="_blank" aria-label="contacts link">aivazovski.ru</a>
-            </button>
+<!--            <button class="contacts-button" aria-label="contacts us">-->
+<!--                <a class="button-link" href="http://aivazovski.ru" target="_blank" aria-label="contacts link">aivazovski.ru</a>-->
+<!--            </button>-->
+
+            <a class="button-link" href="http://aivazovski.ru" target="_blank" aria-label="contacts link">aivazovski</a>
+
 
             <address class="socials" aria-label="socials icons">
                 <a href="https://youtube.com/" target="_blank" aria-label="link to youtube">
